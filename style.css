@@ -1,78 +1,142 @@
   /* wrok sens font from google */
   @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Open+Sans:wght@800&family=Work+Sans:wght@400;600;700;900&display=swap');
-  
-  *{font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Work Sans', sans-serif;
 
-    margin: 0;
-padding: 0;}
-header{background: rgba(255, 144, 14, 0.10);
-        padding: 50px 240px;}
+  * {
+      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Work Sans', sans-serif;
 
-        nav{display: flex;
-            justify-content: space-between;align-items: center;}
-            .nav-title{ 
-                font-size: 2.8rem;
-                font-weight: 700;
-                color: #131313;
-                
-        
-            }
-    nav > ul{
-        list-style: none;
-        display: flex;
+      margin: 0;
+      padding: 0;
+  }
+
+  header {
+      background: rgba(255, 144, 14, 0.10);
+      padding: 50px 240px;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .nav-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #131313;
+
+
+  }
+
+  nav>ul {
+      list-style: none;
+      display: flex;
+  }
+
+  nav li {
+      margin-right: 30px;
+      font-weight: 500;
+      font-size: 1rem;
+
+
+  }
+
+  nav li a {
+      text-decoration: none;
+      color: #424242;
+  }
+
+  .banner {
+      text-align: center;
+      width: 850px;
+      margin: 0px auto;
+      width: 100%;
+  }
+
+  .banner-title {
+      font-size: 4rem;
+      color: #131313;
+      font-weight: 700px;
+  }
+
+  .banner-info {
+      color: #727272;
+      font-size: 1rem;
+      width: 8508px;
+      margin: 0px auto;
+  }
+
+  .btn-pri {
+      border-radius: 8px;
+      background: #FF900E;
+      padding: 20px 24px;
+      color: #FFF;
+      font-weight: 600;
+      font-size: 1.25rem;
+      border: none;
+      cursor: pointer;
+  }
+
+  .banner-image {
+      width: 100%;
+      margin-top: 50px;
+  }
+
+  /* responsive for banner section */
+  /* Mobile devices */
+  @media screen and (max-width:576px) {
+      header {
+          padding: 20px;
+      }
+
+      nav {
+          flex-direction: column;
+      }
+
+      .banner {
+          width: 100%;
+      }
+  }
+
+  /* Medium Devices */
+  @media screen and (min-width:576px) and (max-width:960px) {
+      nav {
+          flex-direction: column;
+      }
+
+      header {
+          padding: 30px;
+      }
+
+  }
+
+  /* main styles */
+  main{
+    max-width: 1440px;
+    margin:0px auto;
+
+  }
+  section div li{list-style: none;}
+  .team-container{display: flex;
+                    align-items: center;
+                flex-direction: row-reverse;
+           }
+    .team-img-container{
+         display: grid;
+         grid-template-columns:repeat(2,1fr) ;
+         gap:1.5rem;
+         margin-right: 4rem;
+         margin-top: 4.8rem;
+         margin-bottom: 8rem;
     }
-    nav li{
-        margin-right:30px;
-        font-weight:500;
-        font-size: 1rem;
-       
-
+    .team-title{
+        font-size:2.8rem ;
+        font-weight: 700;
     }
-    nav li a{text-decoration: none;
-    color:#424242;}
-
-.banner{
-    text-align: center;
-    width: 850px;
-    margin: 0px auto;
-    width: 100%;
-}
-.banner-title{
-    font-size: 4rem;
-    color:131313;
-    font-weight: 700px;
-}
-.banner-info{
-    color: #727272;
-    font-size: 1rem;
-}
-.btn-pri{
-    border-radius: 8px;
-background: #FF900E;
-padding: 20px 24px;
-color: #FFF;
-font-weight:600 ;
-font-size: 1.25rem;
-border: none;
-cursor: pointer;
-}
-
-.banner-image{width: 100%;
-                margin-top: 50px;}
-
-/* responsive for banner section */
-/* Mobile devices */
-@media screen and (max-width:576px){ 
-    header{padding: 20px;}
-    nav{flex-direction: column;
+    .team-info{
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        color: #727272;
+        font-weight: 400;
     }
-    .banner{width: 100%;}
-}
-/* Medium Devices */
-@media screen and (min-width:576px) and (max-width:960px) {
-    nav{flex-direction: column;}
-    header{padding: 30px;}
-    
-}
